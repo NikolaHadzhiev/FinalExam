@@ -871,7 +871,6 @@ C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPrepa
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ExamMVCPreparation.TagHelpers.input.cache
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ExamMVCPreparation.TagHelpers.output.cache
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ExamMVCPreparation.RazorCoreGenerate.cache
-C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Admin\AllUsers.cshtml.g.cs
@@ -892,3 +891,4 @@ C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPrepa
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ref\ExamMVCPreparation.dll
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ExamMVCPreparation.pdb
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ExamMVCPreparation.genruntimeconfig.cache
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs

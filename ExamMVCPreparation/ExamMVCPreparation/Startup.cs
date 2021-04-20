@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace ExamMVCPreparation
@@ -45,6 +46,8 @@ namespace ExamMVCPreparation
                 .AddRoles<IdentityRole<int>>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+            services.ConfigureApplicationCookie(options => options.LoginPath = "/Account/Login");
+
             services.AddControllersWithViews();
 
            
@@ -74,7 +77,6 @@ namespace ExamMVCPreparation
 
             app.UseAuthentication();
             app.UseAuthorization();
-
 
             app.UseEndpoints(endpoints =>
             {

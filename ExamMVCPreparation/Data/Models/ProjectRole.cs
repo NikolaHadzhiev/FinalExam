@@ -10,7 +10,5 @@ namespace Data.Models
     public class ProjectRole : IdentityRole<int>
     {
         public string Name { get; set; }
-
-       // public List<> MyProperty { get; set; }
     }
 }
