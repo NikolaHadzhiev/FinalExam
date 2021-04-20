@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Data.Models.UserViewModel>
+
+@{
+    ViewData["Title"] = "AllUsers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>AllUsers</h1>
+
+<p>
+    <a asp-action="Register" asp-controller="Account">Create New</a>
+</p>
+<table class="table col-md-9">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a class="btn btn-outline-danger" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a class="btn btn-outline-primary" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
