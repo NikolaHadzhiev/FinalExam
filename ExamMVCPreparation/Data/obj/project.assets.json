@@ -5865,11 +5865,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "N:\\Final Programming Exam 2021\\ExamMVCPreparation\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\ExamMVCPreparation\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "N:\\Final Programming Exam 2021\\ExamMVCPreparation\\Data\\Data.csproj",
+      "projectPath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\ExamMVCPreparation\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\Nikih\\.nuget\\packages\\",
-      "outputPath": "N:\\Final Programming Exam 2021\\ExamMVCPreparation\\Data\\obj\\",
+      "outputPath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\ExamMVCPreparation\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikih\\AppData\\Roaming\\NuGet\\NuGet.Config",

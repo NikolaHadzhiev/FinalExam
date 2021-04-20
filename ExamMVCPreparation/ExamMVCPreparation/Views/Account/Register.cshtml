@@ -1,4 +1,6 @@
 ﻿@model RegisterViewModel
+@inject SignInManager<ApplicationUser> signInManager
+@inject RoleService roleService
 
 @{
     ViewData["Title"] = "User Registration";
@@ -36,6 +38,31 @@
                 <input asp-for="@Model.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
             </div>
+            @if (User.IsInRole("Admin"))
+            {
+
+                <div class="form-group">
+                    <label asp-for="@Model.Role" class="control-lable"></label>
+                    <select asp-for="@Model.Role" class="form-control">
+                        <option value="" selected disabled>Please choose a role</option>
+                        @foreach (var role in roleService.GetAllRoles())
+                        {
+                            <option value="@role.Name">@role.Name</option>
+                        }
+                    </select>
+                </div>
+                @*<div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                            Dropdown Example
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">JavaScript</a></li>
+                        </ul>
+                    </div>*@
+            }
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Register</button>
             </div>

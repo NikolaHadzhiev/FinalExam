@@ -1,25 +1,40 @@
-﻿using Data.Entities;
+﻿using Business;
+using Data.Entities;
 using ExamMVCPreparation.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace ExamMVCPreparation.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly UserManager<ApplicationUser> userManager;
-        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager)
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole<int>> _roleManager;
+        
+        private readonly RoleService roleService;
+ 
+        public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager, RoleService roleService, RoleManager<IdentityRole<int>> roleManager)
         {
             _logger = logger;
-            this.userManager = userManager;
+            this._userManager = userManager;
+            this._roleManager = roleManager;
+            this.roleService = roleService;
+            
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            if (!roleService.RoleExists())
+            {
+                var user = await _roleManager.CreateAsync(new IdentityRole<int>("User"));
+                var admin = await _roleManager.CreateAsync(new IdentityRole<int>("Admin"));
+            }
+
             return View();
         }
 

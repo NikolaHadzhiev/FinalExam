@@ -7643,11 +7643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "N:\\Final Programming Exam 2021\\ExamMVCPreparation\\ExamMVCPreparation\\ExamMVCPreparation.csproj",
+      "projectUniqueName": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\ExamMVCPreparation\\ExamMVCPreparation\\ExamMVCPreparation.csproj",
       "projectName": "ExamMVCPreparation",
-      "projectPath": "N:\\Final Programming Exam 2021\\ExamMVCPreparation\\ExamMVCPreparation\\ExamMVCPreparation.csproj",
+      "projectPath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\ExamMVCPreparation\\ExamMVCPreparation\\ExamMVCPreparation.csproj",
       "packagesPath": "C:\\Users\\Nikih\\.nuget\\packages\\",
-      "outputPath": "N:\\Final Programming Exam 2021\\ExamMVCPreparation\\ExamMVCPreparation\\obj\\",
+      "outputPath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\ExamMVCPreparation\\ExamMVCPreparation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nikih\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7664,8 +7664,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "N:\\Final Programming Exam 2021\\ExamMVCPreparation\\Business\\Business.csproj": {
-              "projectPath": "N:\\Final Programming Exam 2021\\ExamMVCPreparation\\Business\\Business.csproj"
+            "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\ExamMVCPreparation\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\ExamMVCPreparation\\Business\\Business.csproj"
             }
           }
         }

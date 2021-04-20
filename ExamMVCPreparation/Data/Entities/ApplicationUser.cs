@@ -13,7 +13,7 @@ namespace Data.Entities
         public DateTime RegistrationDate { get; set; } = DateTime.Now;
         public string City { get; set; } = "";
 
-        public string Role { get; set; }
+        public string Role { get; set; } = "User";
 
     }
 }

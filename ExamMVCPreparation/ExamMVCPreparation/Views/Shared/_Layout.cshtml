@@ -1,5 +1,6 @@
 ﻿@inject SignInManager<ApplicationUser> signInManager
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,24 +28,25 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
-                        <ul class="navbar-nav ml-auto">
-                            @if (this.signInManager.IsSignedIn(User) @*&& User.IsInRole("Admin")*@)
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout @User.Identity.Name</a>
-                                </li>
+                    <ul class="navbar-nav ml-auto">
+                        @{bool isSignedIn = signInManager.IsSignedIn(User);}
+                        @if (isSignedIn @*&& User.IsInRole("User")*@)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout @User.Identity.Name</a>
+                            </li>
 
-                            }
-                            else
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Account Login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Account Register</a>
-                                </li>
-                            }
-                        </ul>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Account Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Account Register</a>
+                            </li>
+                        }
+                    </ul>
                 </div>
             </div>
         </nav>

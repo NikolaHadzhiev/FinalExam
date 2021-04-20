@@ -13,3 +13,18 @@ N:\Final Programming Exam 2021\ExamMVCPreparation\Business\obj\Debug\net5.0\Busi
 N:\Final Programming Exam 2021\ExamMVCPreparation\Business\obj\Debug\net5.0\Business.dll
 N:\Final Programming Exam 2021\ExamMVCPreparation\Business\obj\Debug\net5.0\ref\Business.dll
 N:\Final Programming Exam 2021\ExamMVCPreparation\Business\obj\Debug\net5.0\Business.pdb
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\bin\Debug\net5.0\Business.deps.json
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\bin\Debug\net5.0\Business.dll
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\bin\Debug\net5.0\ref\Business.dll
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\bin\Debug\net5.0\Business.pdb
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\bin\Debug\net5.0\Data.dll
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\bin\Debug\net5.0\Data.pdb
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\obj\Debug\net5.0\Business.csprojAssemblyReference.cache
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\obj\Debug\net5.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\obj\Debug\net5.0\Business.AssemblyInfoInputs.cache
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\obj\Debug\net5.0\Business.AssemblyInfo.cs
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\obj\Debug\net5.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\obj\Debug\net5.0\Business.csproj.CopyComplete
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\obj\Debug\net5.0\Business.dll
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\obj\Debug\net5.0\ref\Business.dll
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Business\obj\Debug\net5.0\Business.pdb

@@ -16,6 +16,7 @@ namespace Data
         {
             base.OnModelCreating(modelBuilder);
         }
-        public DbSet<ProjectRole> Role { get; set; }
+        public DbSet<ProjectRole> TestRole { get; set; }
+
     }
 }

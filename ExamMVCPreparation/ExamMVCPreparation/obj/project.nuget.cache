@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EfvGeannAXvitZ7KnUDOJf9METjNMbXyndSZzGQygOx957sqX2l1QCtEeLqGJ8f2fCjV5HOhsj+GnBIGqPJTLw==",
+  "dgSpecHash": "EnrDo4QwHw+Cz6hkaJ391jmema+8qi6GEdosTOOCcSN/rHBoHeFhgA9wk0Iuej7A7DR1liRj510S8JR8SoxoxQ==",
   "success": true,
-  "projectFilePath": "N:\\Final Programming Exam 2021\\ExamMVCPreparation\\ExamMVCPreparation\\ExamMVCPreparation.csproj",
+  "projectFilePath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\ExamMVCPreparation\\ExamMVCPreparation\\ExamMVCPreparation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikih\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.5\\microsoft.aspnetcore.authentication.jwtbearer.5.0.5.nupkg.sha512",
