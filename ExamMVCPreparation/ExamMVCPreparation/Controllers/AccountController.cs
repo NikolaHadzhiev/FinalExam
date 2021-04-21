@@ -1,9 +1,11 @@
 ﻿using Business;
 using Data.Entities;
 using Data.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -15,12 +17,15 @@ namespace ExamMVCPreparation.Controllers
         private readonly SignInManager<ApplicationUser> signInManager;
         private readonly RoleService roleService;
 
+        public readonly IHostingEnvironment HostingEnvironment;
+
         public AccountController(UserManager<ApplicationUser> userManager,
-            SignInManager<ApplicationUser> signInManager, RoleService roleService)
+            SignInManager<ApplicationUser> signInManager, RoleService roleService, IHostingEnvironment hostingEnvironment)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
             this.roleService = roleService;
+            this.HostingEnvironment = hostingEnvironment;
         }
 
         [HttpGet]
@@ -61,14 +66,28 @@ namespace ExamMVCPreparation.Controllers
 
             if (ModelState.IsValid)
             {
+                string uniqueFileName = null;
                 if (model.Role == "User" || model.Role == null)
                 {
+                    if (model.Photo != null)
+                    {
+                        string uploadsFolder = Path.Combine(HostingEnvironment.WebRootPath, "images");
+                        uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Photo.FileName;
+                        if (!uniqueFileName.Contains(".jpg") || !uniqueFileName.Contains(".png"))
+                        {
+                            uniqueFileName = null;
+                        }
+                        string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                        model.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
+                    }
                     user = new ApplicationUser
                     {
                         Email = model.Email,
                         UserName = model.Username,
                         FirstName = model.FirstName,
-                        Role = "User"
+                        BirthDate = model.BirthDate,
+                        Role = "User",
+                        PhotoPath = uniqueFileName
                     };
 
                     result = await this.userManager.CreateAsync(user, model.Password);
@@ -76,12 +95,20 @@ namespace ExamMVCPreparation.Controllers
 
                 if (model.Role == "Admin")
                 {
+                    if (model.Photo != null)
+                    {
+                        string uploadsFolder = Path.Combine(HostingEnvironment.WebRootPath, "images");
+                        uniqueFileName = Guid.NewGuid().ToString() + "_" + model.Photo.FileName;
+                        string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                        model.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
+                    }
                     user = new ApplicationUser
                     {
                         Email = model.Email,
                         UserName = model.Username,
                         FirstName = model.FirstName,
-                        Role = "Admin"
+                        Role = "Admin",
+                        PhotoPath = uniqueFileName
                     };
 
                     result = await this.userManager.CreateAsync(user, model.Password);

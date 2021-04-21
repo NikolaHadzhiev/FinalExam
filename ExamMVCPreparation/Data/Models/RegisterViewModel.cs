@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -31,6 +32,11 @@ namespace Data.Models
             ErrorMessage = "Confirm Password does not match Password")]
         public string ConfirmPassword { get; set; }
 
+        [DataType(DataType.Date)]
+        public DateTime BirthDate { get; set; }
+
         public string Role { get; set; }
+
+        public IFormFile Photo { get; set; }
     }
 }

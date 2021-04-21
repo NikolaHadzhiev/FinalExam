@@ -91,3 +91,11 @@ body {
     height: 100px;
     width: calc(100% * (1/4) - 10px - 1px)
 }
+
+.btn{
+    width:75px
+}
+.imageTumbnail{
+    height: 200px;
+    width: auto;
+}

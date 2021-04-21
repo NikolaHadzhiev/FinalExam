@@ -25,6 +25,7 @@ namespace Business
                 model.Id = user.Id;
                 model.Username = user.UserName;
                 model.Email = user.Email;
+                model.PhotoPath = user.PhotoPath;
                 viewModels.Add(model);
             }
             return viewModels;

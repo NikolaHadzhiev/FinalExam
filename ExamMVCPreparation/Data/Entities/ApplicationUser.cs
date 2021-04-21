@@ -11,9 +11,12 @@ namespace Data.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; } = "";
         public DateTime RegistrationDate { get; set; } = DateTime.Now;
+        public DateTime BirthDate { get; set; }
         public string City { get; set; } = "";
 
         public string Role { get; set; } = "User";
+
+        public string PhotoPath { get; set; }
 
     }
 }
