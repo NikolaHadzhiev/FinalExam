@@ -1,41 +1,47 @@
-﻿@model IEnumerable<Data.Models.UserViewModel>
+﻿<link href="~/css/site.css" rel="stylesheet" />
+@model IEnumerable<Data.Models.UserViewModel>
 
 @{
-    ViewData["Title"] = "AllUsers";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Home Page";
 }
 
-<h1>All Users</h1>
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a asp-action="Index" asp-controller="Home" class=" nav-link">List</a>
+            </li>
+            <li class="nav-item">
+                <a asp-action="Privacy" asp-controller="Home" class="nav-link">Privacy</a>
+            </li>
+            <li class="dropdown-item">
+                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
 
-<p style="font-size:20px">
-    <a asp-action="Register" asp-controller="Account">Create New</a>
-</p>
-<table class="table col-md-9">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Username)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Username)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a class="btn btn-outline-danger" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a class="btn btn-outline-primary" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+                <ul class="dropdown-menu">
+                    <li><a asp-action="Privacy" asp-controller="Home">Mission</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">Products</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="card-deck">
+        @foreach (var user in Model)
+        {
+            <div class="card m-3" style="min-width: 18rem; max-width: 30.5%">
+                <div class="card-header">
+                    <h3>@user.Username</h3>
+                </div>
+                <img class="card-img-top" src="~/images/unnamed.jpg" />
+                <div class="card-footer text-center">
+                    <a href="#" class="btn btn-primary">View</a>
+                    <a href="#" class="btn btn-primary">Edit</a>
+                    <a href="#" class="btn btn-danger">Delete</a>
+                </div>
+            </div>
+        }
+    </div>
+    
+</div>

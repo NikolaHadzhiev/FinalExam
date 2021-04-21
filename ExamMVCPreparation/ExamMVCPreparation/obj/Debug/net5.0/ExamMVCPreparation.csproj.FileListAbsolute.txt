@@ -892,3 +892,6 @@ C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPrepa
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ExamMVCPreparation.pdb
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ExamMVCPreparation.genruntimeconfig.cache
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Admin\Create.cshtml.g.cs
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Admin\Delete.cshtml.g.cs
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Admin\Details.cshtml.g.cs

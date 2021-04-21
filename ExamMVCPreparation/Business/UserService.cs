@@ -29,5 +29,71 @@ namespace Business
             }
             return viewModels;
         }
+
+        public ApplicationUser Edit(int? id, UserViewModel viewModel)
+        {
+            ApplicationUser returnUser = null;
+
+            if (id == null)
+            {
+                throw new ArgumentNullException("Id must not be null");
+            }
+            try
+            {
+                returnUser = this.context.Users.FirstOrDefault(x => x.Id == id);
+                returnUser.UserName = viewModel.Username;
+                returnUser.Email = viewModel.Email;
+
+            }
+            catch (Exception)
+            {
+
+                var user = this.context.Users.FirstOrDefault(x => x.Id == id);
+
+                if (user == null)
+                {
+                    throw new ArgumentNullException("Id must not be null");
+                    //throw new EntityNotFoundException("");
+                }
+                else
+                {
+                    throw new Exception("Some Reason");
+                }
+            }
+            context.SaveChanges();
+            return returnUser;
+        }
+        private ApplicationUser OfUserDto(UserViewModel viewModel)
+        {
+            return new ApplicationUser()
+            {
+                Id = viewModel.Id,
+                FirstName = viewModel.Username,
+                UserName = viewModel.Username,
+                Email = viewModel.Email
+            };
+        }
+
+        public ApplicationUser GetById(int? id)
+        {
+            if (id == null)
+            {
+                throw new ArgumentNullException("Id must not be null");
+            }
+            var user = context.Users.FirstOrDefault(x => x.Id == id);
+            if (user == null)
+            {
+                throw new ArgumentNullException("Id must not be null");
+            }
+            return user;
+        }
+
+        public void Delete(int? id)
+        {
+            var user = context.Users.FirstOrDefault(x => x.Id == id);
+            context.Remove(user);
+            context.SaveChanges();
+
+        }
     }
 }
