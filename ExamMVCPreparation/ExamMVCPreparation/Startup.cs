@@ -1,4 +1,5 @@
 using Business;
+using Bussines.Services;
 using Data;
 using Data.Entities;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -34,6 +35,7 @@ namespace ExamMVCPreparation
 
             services.AddScoped<UserService, UserService>();
             services.AddScoped<RoleService, RoleService>();
+            services.AddScoped<CataloguesService, CataloguesService>();
 
             services.AddDefaultIdentity<ApplicationUser>(options =>
             {

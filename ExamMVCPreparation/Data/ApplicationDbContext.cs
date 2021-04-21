@@ -1,4 +1,5 @@
 ﻿using Data.Entities;
+using Data.Entitites;
 using Data.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -17,6 +18,11 @@ namespace Data
             base.OnModelCreating(modelBuilder);
         }
         public DbSet<ProjectRole> TestRole { get; set; }
+
+        public DbSet<Album> Albums { get; set; }
+        public DbSet<Artist> Artists { get; set; }
+        public DbSet<Song> Songs { get; set; }
+        public DbSet<Catalogue> Catalogues { get; set; }
 
     }
 }
