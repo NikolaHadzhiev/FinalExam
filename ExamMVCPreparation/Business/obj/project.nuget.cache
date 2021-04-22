@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "amv15TIlS2J+6euR/rvXOcpPcwM7WMZPZNWMwmknONB/NLG1IYlcgWmk6hd4VDcwr1VBFMQNrr3G1aJ96WKmJA==",
+  "dgSpecHash": "Or/HhXnU7s4SdEkuQ/ctMs5GFyY+1ibz+q99Ha4YbwQHrjQ4Xdj7YjaoWRbvJBt8DZ4jCq1tvt/bbcKY3RiEiw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\ExamMVCPreparation\\Business\\Business.csproj",
   "expectedPackageFiles": [
@@ -15,7 +15,7 @@
     "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.5\\microsoft.entityframeworkcore.abstractions.5.0.5.nupkg.sha512",
     "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.5\\microsoft.entityframeworkcore.analyzers.5.0.5.nupkg.sha512",
     "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.5\\microsoft.entityframeworkcore.relational.5.0.5.nupkg.sha512",
-    "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.5\\microsoft.entityframeworkcore.sqlserver.5.0.5.nupkg.sha512",
+    "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.2\\microsoft.entityframeworkcore.sqlserver.5.0.2.nupkg.sha512",
     "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

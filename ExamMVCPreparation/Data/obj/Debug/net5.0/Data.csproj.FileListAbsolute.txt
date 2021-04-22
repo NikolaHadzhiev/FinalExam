@@ -21,3 +21,4 @@ C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Data\bin\Deb
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Data\obj\Debug\net5.0\Data.dll
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Data\obj\Debug\net5.0\ref\Data.dll
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Data\obj\Debug\net5.0\Data.pdb
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\Data\obj\Debug\net5.0\Data.csprojAssemblyReference.cache

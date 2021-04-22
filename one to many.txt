@@ -1,0 +1,123 @@
+Song{
+	int ID {get; set;}
+	string Name {get; set}
+	string Description {get; set;}
+
+	int AuthorID {get; set;}
+	public Author Author{ get; set;}
+}
+
+Author{
+	int ID{get; set}
+	string Name{get; set;}
+
+	IList<Song> Songs {get; set;}
+}
+
+DbSet<Songs> Songs {get; set; }
+DbSet<Author> Authors {get; set;}
+
+IList<Song> songs = context.Songs.Include(c => c.Authors).ToList()
+
+@song.Author.Name
+
+<div class="form-group">
+	<label asp-for="AtuhorID"></label>
+	<select asp-for="AuthorID" asp-items="Model.Authors"></select>
+</div>
+_______________________________________________________________________________
+Author newAuthor = context.Authors.Single(c => c.ID == songViewModel.AuthorID);
+Song newSong = new Song{Author = newAuthor}
+context.Songs.Add(newSong);
+context.SaveChanges();
+
+______________________________________________________________________________
+
+public IActionResult Details(int id){
+	if(id == 0)
+	{
+		return Redirect("/Home")
+	}
+	
+	Author author = context.Authors.Include(c => c.Songs).Single(c => c.ID == id)
+	
+	return View("Index")
+}
+
+___________________________________________________________________________
+Song{
+	int ID {get; set;}
+	string Name {get; set}
+	string Description {get; set;}
+
+	public virtual Author Author{ get; set;}
+}
+
+Author{
+	int ID{get; set}
+	string Name{get; set;}
+
+}
+
+DbSet<Author> Authors {get; set;}
+DbSet<Songs> Songs {get; set; }
+
+
+public class SongDetailsViewModel
+{
+	public Author Authors {get; set; }
+	public List<Song> Songs {get; set; }
+
+	int AuthorID {get; set; }
+}
+
+public async Task<IActionResult> Details(int? id)
+{
+	if(id == null)
+	{
+
+		return NotFound();
+	}
+	
+	Author author = await _context.Authors.SingleOrDefaultAsync(m => m.Id == id);
+
+	if(group == null)
+	{
+		return NotFound();
+	}
+
+	SongDetailsViewModel viewModel = new SongDetailsViewModel();
+	
+	viewModel.Author = author;
+
+	List<Songs> songs = await _context.Songs.Where(m => m.Auhtor == author).ToListAsync();
+	
+
+	return View(viewModel);
+}
+
+public async Task<IActionResult> Details([Bind("GroupID, FirstName,LastName")] SongDetailsViewModel viewModel)
+{
+	if(ModelState.IsValid)
+	{
+		Song song = new Song();
+		
+		song. = viewModel.
+
+		Author author = await _context.Auhtor.SingleOrDefaultAsync(m => m.Id == viewModel.AuthorID);
+
+		if(group == null)
+		{
+		    return NotFound();
+		}
+
+		song.Author = author;
+		_context.Song.Add(song)
+		_context.SaveChanges();
+	}
+
+	return View(viewModel);
+}
+
+
+

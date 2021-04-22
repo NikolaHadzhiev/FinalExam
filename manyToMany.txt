@@ -1,0 +1,18 @@
+public class Student
+{
+	public int StudentID{get; set;}
+	public string StudentName {get; set;}
+	pubic ICollection<Course> Courses{get; set; }
+}
+
+public class Course
+{
+	public int CourseID{get; set; }
+	public string CourseName {get; set; }
+	pubic ICollection<Student> Students {get; set;}
+
+}
+
+DbSet<Course> Courses {get; set; }
+DbSet<Student> Courses {get; set; }
+
