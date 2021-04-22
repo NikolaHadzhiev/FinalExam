@@ -897,3 +897,8 @@ C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPrepa
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ref\ExamMVCPreparation.dll
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ExamMVCPreparation.pdb
 C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\ExamMVCPreparation.genruntimeconfig.cache
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Artists\Create.cshtml.g.cs
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Artists\Delete.cshtml.g.cs
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Artists\Details.cshtml.g.cs
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Artists\Edit.cshtml.g.cs
+C:\Users\Nikih\Desktop\MyFinalExamDemo\FinalExam\ExamMVCPreparation\ExamMVCPreparation\obj\Debug\net5.0\Razor\Views\Artists\Index.cshtml.g.cs

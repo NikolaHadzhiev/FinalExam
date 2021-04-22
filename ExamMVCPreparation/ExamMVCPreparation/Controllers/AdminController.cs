@@ -80,5 +80,12 @@ namespace ExamMVCPreparation.Controllers
             return RedirectToAction(nameof(AllUsers));
         }
 
+        [HttpGet]
+        public IActionResult AllUsers(string Empsearch)
+        {
+            ViewData["GetDetails"] = Empsearch;
+            return View(userService.SearchUser(Empsearch));
+        }
+
     }
 }

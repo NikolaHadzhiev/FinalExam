@@ -96,5 +96,28 @@ namespace Business
             context.SaveChanges();
 
         }
+
+        public List<UserViewModel> SearchUser(string EmpSearch)
+        {
+            var empquery = from x in context.Users select x;
+            if (!String.IsNullOrEmpty(EmpSearch))
+            {
+                empquery = empquery.Where(x => x.UserName.Contains(EmpSearch));
+            }
+
+            List<UserViewModel> viewModels = new List<UserViewModel>();
+            foreach (var user in empquery)
+            {
+                UserViewModel model = new UserViewModel();
+                model.Id = user.Id;
+                model.Username = user.UserName;
+                model.Email = user.Email;
+                model.PhotoPath = user.PhotoPath;
+                viewModels.Add(model);
+            }
+
+            return viewModels;
+           
+        }
     }
 }
