@@ -1,0 +1,64 @@
+﻿@inject SignInManager<ApplicationUser> signInManager
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <title>@ViewData["Title"] - Exam</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+
+        @{bool isSignedIn = signInManager.IsSignedIn(User);}
+        @if (this.signInManager.IsSignedIn(User) && this.User.IsInRole("Client"))
+        {
+            <h1>You are logged in</h1>
+
+            <a asp-controller="Task" asp-action="Index" style="text-decoration: none" class="custom-button">Tasks</a>
+            <a asp-controller="Location" asp-action="Index" style="text-decoration: none" class="custom-button custom-button2">Locations</a>
+            <a asp-controller="Account" asp-action="Logout" style="text-decoration: none" class="custom-button custom-button4">Logout @User.Identity.Name</a>
+        }
+        else if (this.signInManager.IsSignedIn(User) && this.User.IsInRole("Administrator"))
+        {
+            <h1>You are logged in</h1>
+
+            <a asp-controller="Admin" asp-action="AllUsers" style="text-decoration: none" class="custom-button">Users</a>
+            <a asp-controller="Task" asp-action="Index" style="text-decoration: none" class="custom-button custom-button2">Tasks</a>
+            <a asp-controller="Location" asp-action="Index" style="text-decoration: none" class="custom-button custom-button3">Locations</a>
+            <a asp-controller="Account" asp-action="Logout" style="text-decoration: none" class="custom-button custom-button4">Logout @User.Identity.Name</a>
+
+        }
+        else if (this.signInManager.IsSignedIn(User) && this.User.IsInRole("Housekeeper"))
+        {
+            <h1>You are logged in</h1>
+
+            <a asp-controller="Account" asp-action="Register" style="text-decoration: none" class="custom-button custom-button2">Tasks</a>
+            <a asp-controller="Account" asp-action="Logout" style="text-decoration: none" class="custom-button custom-button4">Logout @User.Identity.Name</a>
+
+        }
+        else
+        {
+            <h1>You are not logged in</h1>
+        }
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    @if (IsSectionDefined("Scripts"))
+    {
+        @RenderSection("Scripts", required: true)
+    }
+
+</body>
+</html>

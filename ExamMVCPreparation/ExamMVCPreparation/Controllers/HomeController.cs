@@ -29,7 +29,7 @@ namespace ExamMVCPreparation.Controllers
 
         public async Task<IActionResult> Index()
         {
-            if (!roleService.RoleExists())
+            if (!roleService.RoleExists("Admin") || !roleService.RoleExists("Admin"))
             {
                 var user = await _roleManager.CreateAsync(new IdentityRole<int>("User"));
                 var admin = await _roleManager.CreateAsync(new IdentityRole<int>("Admin"));

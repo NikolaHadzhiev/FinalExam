@@ -1,0 +1,48 @@
+﻿@model RegisterViewModel
+@inject SignInManager<ApplicationUser> signInManager
+@inject RoleService roleService
+
+@{
+    ViewBag.Title = "User Registration";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="login-page">
+    <div class="form">
+        <form class="login-form" method="post" asp-action="Register" asp-controller="Account">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <input asp-for="@Model.FirstName" placeholder="First name" />
+            </div>
+            <div class="form-group">
+                <input asp-for="@Model.LastName" placeholder="Last name" />
+            </div>
+            <div class="form-group">
+                <input asp-for="@Model.Username" placeholder="Username" />
+            </div>
+            <div class="form-group">
+                <input asp-for="@Model.Password" placeholder="Password" />
+            </div>
+            <div class="form-group">
+                <input asp-for="@Model.ConfirmPassword" placeholder="Confirm Password" />
+            </div>
+            @if (User.IsInRole("Administrator"))
+            {
+
+                <div class="form-group">
+                    <select asp-for="@Model.Role" class="form-control">
+                        <option value="" selected disabled>Please choose a role</option>
+                        @foreach (var role in roleService.GetAllRoles())
+                        {
+                            <option value="@role.Name">@role.Name</option>
+                        }
+                    </select>
+                </div>
+            }
+            <button type="submit" class="btn btn-primary">Register</button>
+            <p class="message">Already registered? <a asp-controller="Account" asp-action="Login">Sign In</a></p>
+        </form>
+    </div>
+</div>
+
+

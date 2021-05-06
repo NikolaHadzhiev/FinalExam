@@ -16,24 +16,9 @@ namespace Business
             this.context = context;
         }
 
-        public bool RoleExists()
+        public bool RoleExists(string name)
         {
-            var roles = context.Roles.ToList();
-
-            if (roles == null)
-            {
-                return false;
-            }
-
-            foreach (var role in roles)
-            {
-                if (role.Name == "Admin" || role.Name == "User")
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            return context.Roles.Any(e => e.Name == name);
         }
         public List<ProjectRole> GetAllRoles()
         {

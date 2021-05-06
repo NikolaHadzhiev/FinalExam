@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Data.Models.UserViewModel>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+<br />
+<br />
+<h1>All Users</h1>
+
+<form method="get" asp-action="AllUsers">
+    <p>
+        <input type="search" placeholder="Enter User Username..." value="@ViewData["GetDetails"]" name="Empsearch" style="width: 500px" />
+        <input type="submit" value="Search" class="btn btn-primary" />
+        <a asp-action="AllUsers">Get All Users</a>
+
+    </p>
+</form>
+
+<p>
+    <a asp-action="Register" asp-controller="Account">Create New User</a>
+</p>
+
+<div class="card-deck">
+
+    @foreach (var user in Model)
+    {
+        <div class="card m-3" style="min-width: 18rem; max-width: 30.5%">
+            <div class="card-header">
+                <h3>@user.Username</h3>
+            </div>
+            <div class="card-footer text-center">
+                <a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@user.Id">Edit</a> |
+                <a class="btn btn-outline-primary" asp-action="Details" asp-route-id="@user.Id">Details</a> |
+                <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@user.Id">Delete</a>
+            </div>
+        </div>
+    }
+</div>
