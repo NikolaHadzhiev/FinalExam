@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Xeb7febFOAMp2tKazuKhx0lh68nDyRzeeKBqRGELN92ylt0BDTUyMBIUmPJ5Rv8tGQHLjE0eHq1AuFsycI0sSg==",
+  "dgSpecHash": "pIMb+fr5hdzM+19HP97ze+AVOuUKA0TNy7Jd42msaxBvuzaeqdhQRwD1usldeBjEPlgGPj4VQWcB8SrhCpn0oA==",
   "success": true,
-  "projectFilePath": "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\Business.csproj",
+  "projectFilePath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.4\\microsoft.aspnetcore.cryptography.internal.3.1.4.nupkg.sha512",
     "C:\\Users\\Nikih\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.4\\microsoft.aspnetcore.cryptography.keyderivation.3.1.4.nupkg.sha512",

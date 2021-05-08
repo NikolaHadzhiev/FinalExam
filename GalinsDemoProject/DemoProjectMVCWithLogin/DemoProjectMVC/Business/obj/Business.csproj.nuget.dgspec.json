@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\Business.csproj": {}
+    "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\Business.csproj": {}
   },
   "projects": {
-    "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\Business.csproj": {
+    "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\Nikih\\.nuget\\packages\\",
-        "outputPath": "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\obj\\",
+        "outputPath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Nikih\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\Data.csproj": {
-                "projectPath": "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\Data.csproj"
+              "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\Data.csproj"
               }
             }
           }
@@ -58,21 +62,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\Data.csproj": {
+    "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\Nikih\\.nuget\\packages\\",
-        "outputPath": "N:\\Final Programming Exam 2021\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\obj\\",
+        "outputPath": "C:\\Users\\Nikih\\Desktop\\MyFinalExamDemo\\FinalExam\\GalinsDemoProject\\DemoProjectMVCWithLogin\\DemoProjectMVC\\Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Nikih\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -122,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
